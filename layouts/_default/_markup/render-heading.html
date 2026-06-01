@@ -1,0 +1,8 @@
+{{- /* Keep page/post titles as the only h1 by shifting every Markdown heading down one level. */ -}}
+{{- $level := add .Level 1 -}}
+{{- $class := printf "content-heading-level-%d" .Level -}}
+{{- if le $level 6 -}}
+<h{{ $level }} id="{{ .Anchor | safeURL }}" class="{{ $class }}">{{ .Text | safeHTML }}</h{{ $level }}>
+{{- else -}}
+<div id="{{ .Anchor | safeURL }}" class="{{ $class }}" role="heading" aria-level="{{ $level }}">{{ .Text | safeHTML }}</div>
+{{- end -}}
