@@ -146,32 +146,50 @@
     }
   }
 
-  h1,
-  .content-heading-level-1 {
+  h1 {
     @include relative-font-size(1.5);
   }
 
-  h2,
-  .content-heading-level-2 {
+  h2 {
     @include relative-font-size(1.375);
   }
 
-  h3,
-  .content-heading-level-3 {
+  h3 {
     @include relative-font-size(1.25);
   }
 
-  h4,
-  .content-heading-level-4 {
+  h4 {
     @include relative-font-size(1.25);
   }
 
-  h5,
-  .content-heading-level-5 {
+  h5 {
     @include relative-font-size(1);
   }
 
-  h6,
+  h6 {
+    @include relative-font-size(0.875);
+  }
+
+  h2.content-heading-level-1 {
+    @include relative-font-size(1.5);
+  }
+
+  h3.content-heading-level-2 {
+    @include relative-font-size(1.375);
+  }
+
+  h4.content-heading-level-3 {
+    @include relative-font-size(1.25);
+  }
+
+  h5.content-heading-level-4 {
+    @include relative-font-size(1.25);
+  }
+
+  h6.content-heading-level-5 {
+    @include relative-font-size(1);
+  }
+
   .content-heading-level-6 {
     @include relative-font-size(0.875);
   }
